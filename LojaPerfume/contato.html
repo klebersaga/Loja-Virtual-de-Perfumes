@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="imagens/1872-masculino.ico" type="image/x-icon">
+    <title>Clive Christian Perfume</title>
+</head>
+
+<body>
+    <!-- Menu de navegação -->
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Logo da empresa -->
+    <div class="logo">
+        <img src="imagens/logo2_sem_fundo.png" alt="Imagem do Logo" class="logo">
+    </div>
+
+    <!-- Formulário de contato -->
+    <div class="contact">
+        <h2>Entre em Contato</h2>
+        <p>Entre em contato conosco para obter mais informações sobre nossos produtos.</p>
+        <br>
+        <div class="contact-form">
+            <form action="https://formspree.io/f/xnqkyopg" method="post">
+                <!-- Entre " " Coloque o link da sua conta do Formspree -->
+                <!--<label for="nome">Nome:</label>-->
+                <input type="text" id="nome" name="nome" placeholder="Informe seu nome" required>
+                <!--<label for="email">E-mail:</label>-->
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <!--<label for="mensagem">Mensagem:</label>-->
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder=" Mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- *** Pessoal para fazer o formulário de contato estou utilizando o Formspree que 
+        basicamente é um serviço no qual os dados do formulário são enviados para o servidor 
+        dessa empresa que redireciona para o endereço de e-mail cadastrado ao criar a conta! *** -->
+
+    <!-- Mapa do Google com endereço fictício -->
+    <div class="google-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6043.98634487114!2d-73.98187372229005!3d40.76217489999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fac03032a7%3A0x7da435edcc2b9cad!2sClive%20Christian%20Perfume!5e0!3m2!1spt-PT!2sbr!4v1700264860045!5m2!1spt-PT!2sbr"
+            width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Links para redes sociais -->
+    <div class="social-links">
+        <h2>Nossas redes sociais</h2>
+        <div class="social-icons-container">
+            <a href="#" target="_blank" class="social-icon"><img src="imagens/whatsapp-icone.png" alt="WhatsApp"></a>
+            <a href="#" target="_blank" class="social-icon"><img src="imagens/facebook-icone.png" alt="Facebook"></a>
+            <a href="#" target="_blank" class="social-icon"><img src="imagens/twitter-icone.png" alt="Twitter"></a>
+            <a href="#" target="_blank" class="social-icon"><img src="imagens/instagram-icone.png" alt="Instagram"></a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        &copy; 2023 Clive Christian Perfume Limited - Site para fins educativos
+    </footer>
+</body>
+
+</html>

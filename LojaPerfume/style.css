@@ -1,0 +1,387 @@
+/* Estilos gerais */
+/* -------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Dancing+Script:wght@600&family=Playfair+Display+SC:wght@700&display=swap');
+/* Estilo para o contêiner de cards */
+.tituloInicial{
+    font-family: 'Playfair Display SC', serif;
+    font-style: italic;
+}
+.hhhh{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Playfair Display SC', serif;
+    font-style: oblique;
+    text-transform: lowercase;
+}
+
+.titulosobrenos{
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Playfair Display SC', serif;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    /* Isso alinhará os cards horizontalmente */
+    flex-wrap: wrap;
+    /* Quebrar em uma nova linha se não couberem na largura da tela */
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* Adiciona margem esquerda e direita para criar espaço entre os cards e as bordas da tela */
+}
+
+/* Estilo para os cards individuais */
+.card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    /* Define o tamanho e margem dos cards individuais */
+}
+
+/* Estilo para as faces dos cards (frente e verso) */
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+    /* Estilo para o rosto dos cards, incluindo a animação de virar */
+}
+
+/* Estilo para a frente dos cards */
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+    /* Estilo para a frente dos cards, incluindo a animação de rotação e sombra */
+}
+
+/* Estilo para a imagem dentro da frente do card */
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Estilo para a imagem dentro da frente do card, cobrindo todo o espaço */
+}
+
+/* Estilo para o título na frente do card */
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 30px;
+    color: #ffff;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Estilo para o verso dos cards */
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #0000;
+    /* Estilo para o verso do card, incluindo a animação de rotação e cores de fundo e texto */
+}
+
+/* Estilo para a seção de link no verso do card */
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* Estilo para o botão no verso do card */
+.card .back .link a button {
+    background-color: #ae9402;
+    color: #ffffff;
+    width: 150px;
+    border-radius: 5px;
+    padding: 7px 15px;
+}
+
+/* Estilo de hover para o botão no verso do card */
+.card .back .link a button:hover {
+    background-color: #4CAF50;
+}
+
+/* Estilo para o título no verso do card */
+.card .back h3 {
+    font-size: 27px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+/* Estilo para o texto no verso do card */
+.card .back p {
+    font-size: 12px;
+    letter-spacing: 0,25px;
+}
+
+/* Estilo para a animação quando o card é hover (mouse por cima) */
+.card:hover .front {
+    transform: perspective(600PX) rotateY(180deg);
+}
+
+/* Estilo para a animação quando o card é hover (mouse por cima) */
+.card:hover .back {
+    transform: perspective(600PX) rotateY(360deg);
+}
+
+/* Definindo o plano de fundo do corpo com uma imagem que cobre toda a área */
+body {
+    background-image: url('imagens/superficie-abstrata-e-texturas-de-parede-de-pedra-branca-de-concreta.jpg');
+    /* Substitua 'seu-background.jpg' pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    /* Especificando a fonte padrão para o texto */
+    margin: 0;
+    /* Removendo margens padrão */
+    padding: 0;
+    /* Removendo preenchimentos padrão */
+}
+
+/* Classe CSS para estilizar o logo e alinhar à esquerda com espaço abaixo */
+.logo {
+    float: center;
+    /* Alinha o logo ao centro */
+    max-width: 300px;
+    /* Defina a largura máxima desejada para o logo */
+    height: auto;
+    /* Mantém a proporção original da imagem */
+
+}
+
+/* Configurando o contêiner principal com largura máxima e margens automáticas */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para o menu de navegação */
+/* -------------------------------------------------------- */
+
+/* Removendo marcadores de lista, margens e preenchimentos do elemento de lista não ordenada */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4e5754;
+    /* Definindo a cor de fundo do menu de navegação */
+    overflow: hidden;
+}
+
+/* Alinhando os itens da lista horizontalmente */
+li {
+    float: left;
+}
+
+/* Estilos para os links no menu de navegação */
+li a {
+    display: block;
+    color: white;
+    /* Definindo a cor do texto para branco */
+    text-align: center;
+    padding: 14px 16px;
+    /* Espaçamento interno para os itens do menu */
+    text-decoration: none;
+}
+
+/* Mudando a cor de fundo ao passar o mouse sobre os links do menu */
+li a:hover {
+    background-color: #ae9402;
+}
+
+/* Classe CSS para estilizar o vídeo */
+/* -------------------------------------------------------- */
+.video {
+    width: 100%;
+    /* Ocupa a largura total do contêiner pai */
+    max-width: 600px;
+    /* Define a largura máxima desejada para o vídeo */
+    height: 400px;
+    /* Define a altura */
+    display: block;
+    /* Remove espaços em branco indesejados ao redor do vídeo */
+    margin: 20px auto;
+    /* Centraliza o vídeo horizontalmente e adiciona margem superior e inferior */
+}
+
+/* Estilos para a página de contato */
+/* -------------------------------------------------------- */
+.contact {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Estilos para o formulário de contato */
+/* -------------------------------------------------------- */
+.contact-form {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Definindo estilos para as etiquetas no formulário de contato */
+.contact-form label {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Definindo estilos para os campos de entrada e área de texto no formulário de contato */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Definindo estilos para o botão de envio no formulário de contato */
+.contact-form button {
+    background-color: #ae9402;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.contact {
+    width: 700px;
+    height: 430px;
+    margin: 0 auto;
+    /* Define as margens horizontalmente para "auto" */
+    border: 2px solid #4e5754;
+}
+
+/* Estilos para a imagem e texto de apresentação */
+/* -------------------------------------------------------- */
+/* Garantindo que a imagem se ajuste à largura do contêiner */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Alinhando o título centralmente */
+h1 {
+    text-align: center;
+}
+
+/* Alinhando o texto centralmente com largura máxima */
+p {
+    text-align: justify;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos para as colunas */
+/* -------------------------------------------------------- */
+/* Usando flexbox para criar colunas alinhadas horizontalmente */
+.columns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Estilos para cada coluna */
+.column {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.column1 {
+    text-align: justify;
+    align-items: center;
+    margin: auto;
+}
+
+.column2 {
+    text-align: justify;
+    align-items: center;
+    margin: auto;
+}
+
+/* Definindo a largura das imagens dentro das colunas */
+.column img {
+    width: 400px;
+    /* Defina o tamanho desejado em pixels */
+    height: auto;
+    /* Isso mantém a proporção original */
+    display: block;
+    /* Para remover quaisquer espaços em branco indesejados ao redor da imagem */
+    margin: 0 auto;
+    /* Centraliza a imagem horizontalmente */
+}
+
+/* Classe CSS para estilizar o mapa do Google */
+/* -------------------------------------------------------- */
+.google-map {
+    width: 100%;
+    /* Ocupa a largura total do contêiner pai */
+    max-width: 800px;
+    /* Define a largura máxima desejada para o mapa */
+    height: auto;
+    /* Mantém a proporção original da altura */
+    align-items: center;
+    /* Centraliza verticalmente */
+    display: block;
+    /* Remove espaços em branco indesejados ao redor do mapa */
+    margin: 20px auto;
+    /* Centraliza o mapa horizontalmente e adiciona margem superior e inferior */
+}
+
+/* Estilos para os ícones das redes sociais */
+/* -------------------------------------------------------- */
+.social-icons-container {
+    display: flex;
+    /* Exibe os ícones em uma linha horizontal */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    margin-bottom: 10px;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-icon {
+    margin: 0 10px;
+    /* Espaçamento entre os ícones */
+    width: 30px;
+    /* Define a largura desejada */
+    height: 30px;
+    /* Define a altura desejada */
+}
+
+/* Estilos para o rodapé */
+/* -------------------------------------------------------- */
+/* Definindo o estilo do rodapé, incluindo cor de fundo, cor do texto e posicionamento */
+footer {
+    background-color: #4e5754;
+    /* Definindo a cor de fundo do rodapé */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
