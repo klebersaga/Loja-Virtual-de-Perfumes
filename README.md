@@ -1,6 +1,6 @@
 # Loja Virtual De Perfumes
 
-<center>Bem-vindo ao repositório do Projeto de Conclusão de Curso - Loja Perfumaria Online, desenvolvido como parte da formação no curso Técnico em Desenvolvimento de Sistemas do Senai. Este projeto tem como objetivo oferecer uma experiência envolvente, simplificando a escolha e a aquisição de fragrâncias exclusivas em uma plataforma dedicada ao universo da perfumaria de alta qualidade. Explore a sofisticação e a conveniência neste espaço virtual dedicado à apreciação de perfumes refinados.</center>
+<center>Bem-vindo ao repositório do Projeto de Conclusão de Curso - Loja Virtual de Perfumes, desenvolvido como parte da formação no curso Técnico em Desenvolvimento de Sistemas do SENAI. Este projeto tem como objetivo oferecer uma experiência envolvente, simplificando a escolha e a aquisição de fragrâncias exclusivas em uma plataforma dedicada ao universo da perfumaria de alta qualidade. Explore a sofisticação e a conveniência neste espaço virtual dedicado à apreciação de perfumes refinados.</center>
 
 ## Funcionalidades Principais
 
