@@ -23,7 +23,7 @@
 
 ## Recursos Adicionais
 
-1.	Documentação Completa
+Documentação Completa
 <br>•	Para mais informações detalhadas sobre o projeto, consulte o briefing que está no anexo.
 
 ## Contato	
